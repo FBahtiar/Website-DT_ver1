@@ -6,7 +6,7 @@ const DeepfakeInfo = () => {
         <section className="section">
             <div className="container">
                 <h2 style={{ marginBottom: '2rem' }}>Bahaya Deepfake & AIGC</h2>
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem' }}>
+                <div className="deepfake-layout">
                     <div>
                         <p style={{ fontSize: '1.1rem', marginBottom: '2rem', textAlign: 'justify' }}>
                             AI Generated Content (AIGC) adalah konten digital seperti teks, gambar, audio, atau video yang dibuat secara otomatis menggunakan teknologi kecerdasan buatan. Salah satu bentuk AIGC yang banyak dikenal adalah deepfake, yaitu konten media hasil manipulasi AI yang menggunakan identitas individu seperti wajah, suara, atau tindakan seseorang secara sangat realistis meskipun tidak pernah terjadi. Namun, penyalahgunaan deepfake dapat menimbulkan berbagai dampak negatif, antara lain:

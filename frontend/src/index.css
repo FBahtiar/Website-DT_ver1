@@ -180,3 +180,55 @@ p {
     font-size: 2.5rem;
   }
 }
+
+/* Responsive Utilities added for User Request */
+
+.header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.header-scrolled {
+  background-color: rgba(2, 6, 23, 0.9);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #1e3a8a;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4rem;
+}
+
+.deepfake-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+/* Mobile Overrides for new classes */
+@media (max-width: 768px) {
+  .header-container {
+    padding: 1rem;
+  }
+
+  .grid-3 {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .deepfake-layout {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+}

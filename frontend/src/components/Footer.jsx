@@ -8,7 +8,7 @@ const Footer = () => {
             backgroundColor: 'rgba(2, 6, 23, 0.9)'
         }}>
             <div className="container">
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '4rem', marginBottom: '4rem' }}>
+                <div className="grid-3" style={{ marginBottom: '4rem' }}>
                     <div>
                         <h4 style={{ marginBottom: '1.5rem' }}>D/ΔT</h4>
                         <p style={{ fontSize: '0.9rem' }}>
@@ -19,7 +19,7 @@ const Footer = () => {
                         <h4 style={{ marginBottom: '1.5rem' }}>Contact</h4>
                         <p style={{ fontSize: '0.9rem' }}>
                             Email: dhairyoarka@gmail.com<br />
-                            Phone: +62 812-9393-3313
+                            Phone: +62 812-9393-3313<br />
                             Lokasi: Malang, Indonesia
                         </p>
                     </div>

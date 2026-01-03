@@ -36,7 +36,7 @@ const ModelInfo = () => {
 
                 {/* Part B: How it Works */}
                 <h2 className="text-center" style={{ marginBottom: '3rem' }}>Cara Kerja Sistem</h2>
-                <div className="grid-2" style={{ gridTemplateColumns: '1fr 1fr 1fr', gap: '2rem' }}>
+                <div className="grid-3">
                     {[
                         { title: 'Clip Video Extractor', icon: Layers, desc: 'Ekstraksi Fitur Tahap Awal Dengan Clip Video Extractor.' },
                         { title: '2nd Order Feature Extraction', icon: Cpu, desc: 'Ekstraksi Fitur Tahap Lanjut Dengan Ekstraksi Orde Kedua.' },

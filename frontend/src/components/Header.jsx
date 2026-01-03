@@ -12,21 +12,7 @@ const Header = () => {
     }, []);
 
     return (
-        <header style={{
-            position: 'fixed',
-            top: 0,
-            left: 0,
-            width: '100%',
-            padding: '1.5rem 2rem',
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            backgroundColor: scrolled ? 'rgba(2, 6, 23, 0.9)' : 'transparent',
-            backdropFilter: scrolled ? 'blur(10px)' : 'none',
-            zIndex: 1000,
-            transition: 'all 0.3s ease',
-            borderBottom: scrolled ? '1px solid #1e3a8a' : 'none'
-        }}>
+        <header className={`header-container ${scrolled ? 'header-scrolled' : ''}`}>
             <div style={{ fontWeight: 700, fontSize: '1.2rem', fontFamily: 'var(--font-display)' }}>
                 D/ΔT
             </div>
