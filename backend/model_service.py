@@ -14,7 +14,7 @@ from transformers import CLIPImageProcessor, CLIPVisionModel
 import joblib
 
 # Label dan Deskripsi
-CLASSES = ["Deepfake Generated", "Real Video"] # Sesuaikan urutan: 0=AI, 1=Real
+CLASSES = ["AIGC", "Real"] # Sesuaikan urutan: 0=AI, 1=Real
 DESCRIPTIONS = [
     "Video ini memiliki anomali visual yang mengindikasikan bahwa ini adalah hasil generasi AI (Deepfake).",
     "Video ini terdeteksi asli dan tidak menunjukkan tanda-tanda manipulasi AI."
