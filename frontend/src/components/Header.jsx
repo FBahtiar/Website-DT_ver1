@@ -26,7 +26,7 @@ const Header = () => {
     return (
         <header className={`header-container ${scrolled ? 'header-scrolled' : ''}`}>
             <div style={{ fontWeight: 700, fontSize: '1.5rem', fontFamily: 'var(--font-display)', display: 'flex', alignItems: 'center', gap: '10px' }}>
-                <img src="/logo.png" alt="Logo" style={{ height: '40px' }} />
+                <img src="/Logo White.png" alt="Logo" style={{ height: '40px' }} />
             </div>
 
             {/* Desktop Navigation */}
@@ -36,6 +36,25 @@ const Header = () => {
                 <NavLink to="/games" style={navLinkStyles}>Games</NavLink>
                 <NavLink to="/deteksi" style={navLinkStyles}>Deteksi</NavLink>
             </nav>
+
+            {/* Mobile Navigation Toggle (Hamburger) */}
+            <button
+                className={`mobile-nav-toggle ${menuOpen ? 'active' : ''}`}
+                onClick={() => setMenuOpen(!menuOpen)}
+                aria-label="Toggle Navigation"
+            >
+                <span className="hamburger-line"></span>
+                <span className="hamburger-line"></span>
+                <span className="hamburger-line"></span>
+            </button>
+
+            {/* Mobile Menu Overlay */}
+            <div className={`mobile-menu-overlay ${menuOpen ? 'open' : ''}`}>
+                <NavLink to="/" className="mobile-nav-link" onClick={() => setMenuOpen(false)}>Home</NavLink>
+                <NavLink to="/edukasi" className="mobile-nav-link" onClick={() => setMenuOpen(false)}>Edukasi</NavLink>
+                <NavLink to="/games" className="mobile-nav-link" onClick={() => setMenuOpen(false)}>Games</NavLink>
+                <NavLink to="/deteksi" className="mobile-nav-link" onClick={() => setMenuOpen(false)}>Deteksi</NavLink>
+            </div>
         </header>
     );
 };
