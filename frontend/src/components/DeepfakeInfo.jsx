@@ -193,18 +193,18 @@ const DeepfakeInfo = () => {
                         </div>
                     </div>
 
-                    {/* Journal 4 (Layout Reversed) - PLACEHOLDER */}
+                    {/* Journal 4 (Layout Reversed) - REAL CONTENT */}
                     <div className="journal-row reverse-mobile" style={{ display: 'grid', gridTemplateColumns: '2fr minmax(250px, 1fr)', gap: '2rem', alignItems: 'center' }}>
                         {/* Description Area */}
                         <div>
-                            <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem', color: '#f8fafc', fontFamily: 'var(--font-display)' }}>Judul Jurnal Penelitian 4</h3>
+                            <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem', color: '#f8fafc', fontFamily: 'var(--font-display)' }}>The Emerging Threats of Deepfake Attacks and Countermeasures</h3>
                             <p style={{ textAlign: 'justify', fontSize: '1rem' }}>
-                                [Placeholder Deskripsi Jurnal 4] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Teknologi deepfake menimbulkan ancaman signifikan melalui manipulasi media yang dapat digunakan untuk menyebarkan <strong>disinformasi politik</strong> guna menyesatkan opini publik atau merusak hubungan diplomatik antarnegara. Dalam dunia bisnis, teknologi ini dimanfaatkan untuk <strong>penipuan keuangan</strong> dengan menyamar sebagai pejabat eksekutif (CEO) melalui suara atau video, serta berisiko membobol sistem keamanan biometrik seperti pemindai wajah. Selain itu, deepfake mengancam sistem peradilan melalui <strong>pemalsuan bukti</strong> audio atau video yang dapat memengaruhi hasil persidangan. Untuk mengatasi ancaman tersebut, sumber menyarankan penggunaan solusi teknis seperti <strong>Convolutional Neural Networks (CNNs)</strong> dan forensik digital untuk mendeteksi anomali pixel, serta pemanfaatan <strong>blockchain</strong> untuk melacak otentisitas dan asal-usul konten. Langkah pencegahan juga harus melibatkan <strong>pelatihan kesadaran karyawan</strong>, penerapan otentikasi dua langkah, pembatasan akses data visual di media sosial, serta pembentukan <strong>regulasi dan undang-undang</strong> yang tegas untuk mengkriminalisasi penyalahgunaan deepfake yang bersifat merusak.
                             </p>
                         </div>
 
                         {/* Preview Area */}
-                        <a href="#" style={{ textDecoration: 'none' }}>
+                        <a href="/2020 Buo The Emerging Threats of Deepfake Attacks and .pdf" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
                             <div style={{
                                 aspectRatio: '3/4',
                                 backgroundColor: '#1e293b',
@@ -214,19 +214,39 @@ const DeepfakeInfo = () => {
                                 flexDirection: 'column',
                                 alignItems: 'center',
                                 justifyContent: 'center',
-                                cursor: 'default',
-                                opacity: 0.7
-                            }}>
-                                <span style={{ fontSize: '4rem', marginBottom: '1rem' }}>📄</span>
-                                <span style={{ color: '#94a3b8', fontWeight: '600' }}>Coming Soon</span>
+                                cursor: 'pointer',
+                                transition: 'transform 0.3s ease, boxShadow 0.3s ease',
+                                boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
+                                overflow: 'hidden'
+                            }}
+                                onMouseEnter={(e) => {
+                                    e.currentTarget.style.transform = 'translateY(-5px)';
+                                    e.currentTarget.style.boxShadow = '0 10px 15px -3px rgba(96, 165, 250, 0.3)';
+                                    e.currentTarget.style.borderColor = '#60a5fa';
+                                }}
+                                onMouseLeave={(e) => {
+                                    e.currentTarget.style.transform = 'translateY(0)';
+                                    e.currentTarget.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
+                                    e.currentTarget.style.borderColor = '#1e3a8a';
+                                }}
+                            >
+                                <img
+                                    src="/Preview 2020 Buo The Emerging Threats of Deepfake Attacks and _page-0001.jpg"
+                                    alt="Preview Journal 4"
+                                    style={{
+                                        width: '100%',
+                                        height: '100%',
+                                        objectFit: 'cover'
+                                    }}
+                                />
                             </div>
                         </a>
                     </div>
 
-                    {/* Journal 5 (Standard Layout) - PLACEHOLDER */}
+                    {/* Journal 5 (Standard Layout) - REAL CONTENT */}
                     <div className="journal-row" style={{ display: 'grid', gridTemplateColumns: 'minmax(250px, 1fr) 2fr', gap: '2rem', alignItems: 'center' }}>
                         {/* Preview Area */}
-                        <a href="#" style={{ textDecoration: 'none' }}>
+                        <a href="/2024 Sandoval Threat of deepfakes to the criminal justice.pdf" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
                             <div style={{
                                 aspectRatio: '3/4',
                                 backgroundColor: '#1e293b',
@@ -236,19 +256,39 @@ const DeepfakeInfo = () => {
                                 flexDirection: 'column',
                                 alignItems: 'center',
                                 justifyContent: 'center',
-                                cursor: 'default',
-                                opacity: 0.7
-                            }}>
-                                <span style={{ fontSize: '4rem', marginBottom: '1rem' }}>📄</span>
-                                <span style={{ color: '#94a3b8', fontWeight: '600' }}>Coming Soon</span>
+                                cursor: 'pointer',
+                                transition: 'transform 0.3s ease, boxShadow 0.3s ease',
+                                boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
+                                overflow: 'hidden'
+                            }}
+                                onMouseEnter={(e) => {
+                                    e.currentTarget.style.transform = 'translateY(-5px)';
+                                    e.currentTarget.style.boxShadow = '0 10px 15px -3px rgba(96, 165, 250, 0.3)';
+                                    e.currentTarget.style.borderColor = '#60a5fa';
+                                }}
+                                onMouseLeave={(e) => {
+                                    e.currentTarget.style.transform = 'translateY(0)';
+                                    e.currentTarget.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
+                                    e.currentTarget.style.borderColor = '#1e3a8a';
+                                }}
+                            >
+                                <img
+                                    src="/Preview 2024 Sandoval Threat of deepfakes to the criminal justice_page-0001.jpg"
+                                    alt="Preview Journal 5"
+                                    style={{
+                                        width: '100%',
+                                        height: '100%',
+                                        objectFit: 'cover'
+                                    }}
+                                />
                             </div>
                         </a>
 
                         {/* Description Area */}
                         <div>
-                            <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem', color: '#f8fafc', fontFamily: 'var(--font-display)' }}>Judul Jurnal Penelitian 5</h3>
+                            <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem', color: '#f8fafc', fontFamily: 'var(--font-display)' }}>Threat of deepfakes to the criminal justice system: a systematic review</h3>
                             <p style={{ textAlign: 'justify', fontSize: '1rem' }}>
-                                [Placeholder Deskripsi Jurnal 5] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Teknologi deepfake menimbulkan ancaman serius terhadap <strong>integritas sistem peradilan pidana</strong> melalui <strong>pemalsuan bukti digital</strong>, pengikisan kepercayaan publik terhadap lembaga hukum, serta penciptaan fenomena "dunia pasca-kebenaran" di mana bukti visual tidak lagi dianggap sebagai kebenaran mutlak. Potensi bahayanya mencakup penyebaran <strong>pornografi non-konsensual</strong> yang menyasar perempuan secara masif, praktik <strong>penipuan keuangan</strong> dan pencurian identitas melalui kloning suara atau wajah, serta <strong>manipulasi informasi</strong> yang dapat mengacaukan proses demokrasi hingga memicu konflik bersenjata. Sebagai langkah penanganan, sumber menyarankan penggunaan <strong>teknologi deteksi berbasis AI</strong> (seperti <em>Convolutional Neural Networks</em> dan <em>EfficientNet</em>), pemanfaatan <strong>blockchain</strong> untuk validasi konten, serta penerapan protokol verifikasi bukti yang ketat di ruang sidang. Pencegahan jangka panjang memerlukan <strong>reformasi legislatif</strong> yang secara eksplisit mengatur media sintetis, kolaborasi internasional antar lembaga penegak hukum, serta <strong>peningkatan literasi digital</strong> dan pelatihan khusus bagi praktisi hukum agar lebih siap menghadapi ancaman media buatan.
                             </p>
                         </div>
                     </div>
