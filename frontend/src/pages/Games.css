@@ -1,0 +1,153 @@
+.games-section {
+    padding: 4rem 1rem;
+    color: white;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-container {
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.game-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #fff 0%, #a5b4fc 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 1;
+    border-radius: 12px;
+    overflow: hidden;
+
+    /* Default Neon Blue State */
+    border: 4px solid #00f3ff;
+    box-shadow: 0 0 20px rgba(0, 243, 255, 0.3), inset 0 0 20px rgba(0, 243, 255, 0.1);
+
+    /* Smooth transition for border and shadows */
+    transition: border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Neon Effects - Overrides */
+.image-wrapper.correct {
+    border-color: #39ff14;
+    box-shadow: 0 0 30px rgba(57, 255, 20, 0.6), inset 0 0 30px rgba(57, 255, 20, 0.4);
+    animation: none;
+    /* Removing pulse to keep transition clean */
+}
+
+.image-wrapper.incorrect {
+    border-color: #ff073a;
+    box-shadow: 0 0 30px rgba(255, 7, 58, 0.6), inset 0 0 30px rgba(255, 7, 58, 0.4);
+    animation: none;
+    /* Removing pulse to keep transition clean */
+}
+
+.feedback-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    z-index: 10;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+.icon-check {
+    color: #39ff14;
+}
+
+.icon-cross {
+    color: #ff073a;
+}
+
+.buttons-container {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.game-btn {
+    padding: 1rem 3rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+
+    /* Dark background */
+    background: rgba(2, 6, 23, 0.8);
+    color: #ffffff;
+
+    /* Neon Blue Outline */
+    border: 2px solid #00f3ff;
+    box-shadow: 0 0 10px rgba(0, 243, 255, 0.4), inset 0 0 10px rgba(0, 243, 255, 0.1);
+
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: inherit;
+    text-shadow: 0 0 5px rgba(0, 243, 255, 0.5);
+}
+
+.game-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    background: rgba(0, 243, 255, 0.15);
+    box-shadow: 0 0 25px rgba(0, 243, 255, 0.6), inset 0 0 15px rgba(0, 243, 255, 0.2);
+    text-shadow: 0 0 10px rgba(0, 243, 255, 1);
+}
+
+.game-btn:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+/* Remove specific gradients */
+.btn-ai,
+.btn-real {
+    background: rgba(2, 6, 23, 0.8);
+}
+
+.next-btn-container {
+    margin-top: 1rem;
+    height: 60px;
+    /* Reserve space so layout doesn't jump */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-next {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 0.8rem 2.5rem;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-next:hover {
+    background-color: white;
+    color: black;
+}
