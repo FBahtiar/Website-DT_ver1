@@ -33,7 +33,7 @@ const Header = () => {
             <nav className="desktop-nav" style={{ display: 'flex', gap: '2rem' }}>
                 <NavLink to="/" style={navLinkStyles}>Home</NavLink>
                 <NavLink to="/edukasi" style={navLinkStyles}>Edukasi</NavLink>
-                <NavLink to="/games" style={navLinkStyles}>Games</NavLink>
+                <NavLink to="/games" style={navLinkStyles}>Game</NavLink>
                 <NavLink to="/deteksi" style={navLinkStyles}>Deteksi</NavLink>
             </nav>
 
