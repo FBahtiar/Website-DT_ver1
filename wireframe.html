@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Wireframe - Diagram Alur Penggunaan</title>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .mermaid {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Diagram Alur Penggunaan Website Deteksi Deepfake</h1>
+        <p style="text-align: center; color: #666;">Diagram ini menunjukkan alur interaksi pengguna dengan website.</p>
+        
+        <div class="mermaid">
+            flowchart TD
+                A[Membuka Website] --> B[Halaman Home]
+                B --> C[Lihat Hero Section]
+                C --> D[Lihat How to Use]
+                D --> E[Lihat Model Info]
+                E --> F[Pilih Navigasi]
+                
+                F -->|Ke Deteksi| G[Halaman Deteksi]
+                F -->|Ke Edukasi| H[Halaman Edukasi]
+                F -->|Ke Games| I[Halaman Games]
+                
+                G --> J[Upload Gambar/Video]
+                J --> K[Klik Tombol Deteksi]
+                K --> L[Tunggu Proses]
+                L --> M[Lihat Hasil Deteksi]
+                M --> N[Kembali ke Home atau Navigasi Lain]
+                
+                H --> O[Baca Informasi Deepfake]
+                O --> P[Kembali ke Home]
+                
+                I --> Q[Mainkan Game]
+                Q --> R[Kembali ke Home]
+                
+                N --> F
+                P --> F
+                R --> F
+        </div>
+    </div>
+</body>
+</html>

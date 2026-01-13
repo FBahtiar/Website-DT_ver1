@@ -20,7 +20,11 @@ const Footer = () => {
                         <p style={{ fontSize: '0.9rem' }}>
                             Email: dhairyoarka@gmail.com<br />
                             Phone: +62 812-9393-3313<br />
+<<<<<<< HEAD
                             Lokasi: Malang, Indonesia
+=======
+                            Location: Malang, Indonesia
+>>>>>>> Ver4
                         </p>
                     </div>
                     <div>

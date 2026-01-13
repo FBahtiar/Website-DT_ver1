@@ -1,4 +1,8 @@
 import React from 'react';
+<<<<<<< HEAD
+=======
+import { Link } from 'react-router-dom';
+>>>>>>> Ver4
 
 const Hero = () => {
     return (
@@ -11,9 +15,15 @@ const Hero = () => {
                 <p style={{ fontSize: '1.2rem', marginBottom: '3rem' }}>
                     Unggah video Anda dan pastikan keasliannya dengan sistem deteksi berbasis AI yang mampu mengidentifikasi video AIGC dan deepfake secara akurat.
                 </p>
+<<<<<<< HEAD
                 <a href="#classify" className="btn">
                     Mulai Deteksi
                 </a>
+=======
+                <Link to="/deteksi" className="btn">
+                    Mulai Deteksi
+                </Link>
+>>>>>>> Ver4
             </div>
         </section>
     );

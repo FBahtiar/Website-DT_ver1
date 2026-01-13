@@ -5,6 +5,19 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   server: {
+<<<<<<< HEAD
     allowedHosts: ['beautifully-transcondylar-kelley.ngrok-free.dev']
   }
 })
+=======
+    // Mengizinkan domain ngrok agar tidak muncul error "Host not allowed"
+    allowedHosts: [
+      'beautifully-transcondylar-kelley.ngrok-free.dev',
+      '.ngrok-free.dev' // Mengizinkan semua subdomain ngrok
+    ],
+    // Penting: Memastikan Vite mendengarkan pada semua interface agar bisa diakses ngrok
+    host: true, 
+    strictPort: true,
+  }
+})
+>>>>>>> Ver4
