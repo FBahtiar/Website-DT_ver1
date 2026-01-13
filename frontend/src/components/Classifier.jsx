@@ -70,7 +70,7 @@ const Classifier = () => {
 
         try {
             // Replace with your actual backend URL or localhost
-            const response = await axios.post('https://3362dc70501c.ngrok-free.app/classify', formData, {
+            const response = await axios.post('https://a7856c014c9c.ngrok-free.app/classify', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },
