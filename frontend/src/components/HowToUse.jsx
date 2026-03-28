@@ -40,7 +40,7 @@ const HowToUse = () => {
                         <Activity size={48} style={{ marginBottom: '1.5rem', color: '#60a5fa' }} />
                         <h3>2. Lihat Hasil</h3>
                         <p>
-                            Sistem D/ΔT akan memproses video yang Anda unggah dan memberikan hasil deteksi pada bagian "Hasil Deteksi"
+                            Sistem MORF akan memproses video yang Anda unggah dan memberikan hasil deteksi pada bagian "Hasil Deteksi"
                         </p>
                     </div>
                 </div>

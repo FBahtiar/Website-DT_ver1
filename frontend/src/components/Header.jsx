@@ -26,7 +26,7 @@ const Header = () => {
     return (
         <header className={`header-container ${scrolled ? 'header-scrolled' : ''}`}>
             <div style={{ fontWeight: 700, fontSize: '1.5rem', fontFamily: 'var(--font-display)', display: 'flex', alignItems: 'center', gap: '10px' }}>
-                <img src="/Logo White.png" alt="Logo" style={{ height: '40px' }} />
+                <img src="/New Logo.png" alt="Logo" style={{ height: '40px' }} />
             </div>
 
             {/* Desktop Navigation */}
